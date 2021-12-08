@@ -1,4 +1,6 @@
-﻿namespace OOP
+﻿using System;
+
+namespace OOP
 {
     public class Person
     {
@@ -22,10 +24,21 @@
             }
             set
             {
-                FirstName = value;
+                FirstName = ValidateFirstName(value);
             }
         }
-        private string LastName { get; set; }
+        private string LastName
+        {
+            get
+            {
+                return LastName;
+            }
+            set
+            {
+                LastName = ValidateLastName(value); 
+            }
+        }
+
         private int Heigth { get; set; }
         private int Weight { get; set; }
 
@@ -46,6 +59,24 @@
             {
                 throw new System.ArgumentException("The age is high enough");
             }
+        }
+
+        public string ValidateFirstName(string FirstName)
+        {
+            if (FirstName.Length <= 2 && FirstName.Length >= 10) ;
+            {
+                return FirstName;
+            }
+            else
+            {
+                throw new System.ArgumentException("You have entered to few or to many letters in your firstname");
+            }
+        }
+
+
+        private string ValidateLastName(string value)
+        {
+            throw new NotImplementedException();
         }
     }
 }
