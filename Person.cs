@@ -8,11 +8,17 @@ namespace OOP
 {
     public class Person
     {
-        private int Age { get; set; }
-        private string FirstName { get; set; }
-        private string LastName { get; set; }
-        private int Heigth { get; set; }
-        private int Weight { get; set; }
-        
+        public uint Age { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public uint Heigth { get; set; }
+        public uint Weight { get; set; }   
+  
+        //Add constructor to class
+        public Person(string fName, string lName)
+        {
+            FirstName = fName;
+            LastName = lName; 
+        }
     }
 }
