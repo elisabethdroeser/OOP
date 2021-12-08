@@ -2,7 +2,7 @@
 {
     public class Person
     {
-        private int Age
+        public int Age
         {
             get
             {
@@ -36,15 +36,15 @@
             LastName = lName;
         }
 
-        public void ValidateAge(int Age)
+        public int ValidateAge(int Age)
         {
             if (Age > 0)
             {
-                throw new ArgumentException("The age is high enough");
+                return Age;
             }
-            else 
+            else
             {
-                Console.WriteLine("you need to add a new age");
+                throw new System.ArgumentException("The age is high enough");
             }
         }
     }
