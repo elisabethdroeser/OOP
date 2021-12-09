@@ -10,7 +10,14 @@ namespace OOP
     {
         private string Name { get; set; }
         private int Age { get; set; }
-        private int Weight { get; set; } 
+        private int Weight { get; set; }
 
+        public Animal(string name, int age, int weight)
+        {
+            Name = name;
+            Age = age;
+            Weight = weight; 
+        }
     }
+
 }
