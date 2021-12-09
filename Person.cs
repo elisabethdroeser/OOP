@@ -43,8 +43,8 @@
             }
         }
 
-        private int Heigth { get; set; }
-        private int Weight { get; set; }
+        private double Heigth { get; set; }
+        private double Weight { get; set; }
 
         public int ValidateAge(int Age)
         {
@@ -60,25 +60,35 @@
 
         public string ValidateFirstName(string FirstName)
         {
-            if (FirstName.Length <= 2 && FirstName.Length >= 10)
+            if (FirstName.Length < 2)
             {
-                return FirstName;
+                throw new System.ArgumentException("You have entered to few (minimum 2) letters in your name");
+
+            }
+            else if (FirstName.Length >= 10)
+            {
+                throw new System.ArgumentException("You have entered to many (maximum 10) letters in your name");
             }
             else
             {
-                throw new System.ArgumentException("You have entered to few (minimum 2) or to many (maximum 10) letters in your firstname");
+                return FirstName;
             }
         }
 
         private string ValidateLastName(string value)
         {
-            if (FirstName.Length <= 2 && FirstName.Length >= 10)
+            if (LastName.Length < 2)
             {
-                return FirstName;
+                throw new System.ArgumentException("You have entered to few (minimum 2) letters in your name");
+
+            }
+            else if (LastName.Length >= 10)
+            {
+                throw new System.ArgumentException("You have entered to many (maximum 10) letters in your name");
             }
             else
             {
-                throw new System.ArgumentException("You have entered to few (minimum 2) or to many (maximum 10) letters in your firstname");
+                return LastName;
             }
         }
     }
