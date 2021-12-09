@@ -18,6 +18,8 @@ namespace OOP
             Age = age;
             Weight = weight; 
         }
-    }
 
+        public 
+
+    }
 }
