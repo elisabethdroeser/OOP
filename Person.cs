@@ -1,9 +1,13 @@
-﻿using System;
-
-namespace OOP
+﻿namespace OOP
 {
     public class Person
     {
+        //Add constructor to class with required fields
+        public Person(string fName, string lName)
+        {
+            FirstName = fName;
+            LastName = lName;
+        }
         public int Age
         {
             get
@@ -35,19 +39,12 @@ namespace OOP
             }
             set
             {
-                LastName = ValidateLastName(value); 
+                LastName = ValidateLastName(value);
             }
         }
 
         private int Heigth { get; set; }
         private int Weight { get; set; }
-
-        //Add constructor to class with required fields
-        public Person(string fName, string lName)
-        {
-            FirstName = fName;
-            LastName = lName;
-        }
 
         public int ValidateAge(int Age)
         {
@@ -63,20 +60,27 @@ namespace OOP
 
         public string ValidateFirstName(string FirstName)
         {
-            if (FirstName.Length <= 2 && FirstName.Length >= 10) ;
+            if (FirstName.Length <= 2 && FirstName.Length >= 10)
             {
                 return FirstName;
             }
             else
             {
-                throw new System.ArgumentException("You have entered to few or to many letters in your firstname");
+                throw new System.ArgumentException("You have entered to few (minimum 2) or to many (maximum 10) letters in your firstname");
             }
         }
 
-
         private string ValidateLastName(string value)
         {
-            throw new NotImplementedException();
+            if (FirstName.Length <= 2 && FirstName.Length >= 10)
+            {
+                return FirstName;
+            }
+            else
+            {
+                throw new System.ArgumentException("You have entered to few (minimum 2) or to many (maximum 10) letters in your firstname");
+            }
         }
     }
 }
+

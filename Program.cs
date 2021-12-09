@@ -7,14 +7,15 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-
+            //Test if the argumentexception works with different names with few/more letters
             Person person = new Person("Lisa", "Droeser");
 
+            //ArgumentException in Person.cs to validate letters in firstname, lastname (and age).
             try
             {
 
             }
-            catch ArgumentException e);
+            catch (ArgumentException e)
             {
                 Console.WriteLine(e.Message); 
             }
