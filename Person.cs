@@ -75,7 +75,7 @@
             }
         }
 
-        private string ValidateLastName(string value)
+        public string ValidateLastName(string value)
         {
             if (LastName.Length < 2)
             {
