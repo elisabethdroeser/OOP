@@ -20,9 +20,6 @@ namespace OOP
         public int Weight { get; set; }
 
         //Add method 
-        public abstract void DoSound();
-                                                                                  
+        public abstract void DoSound();                                                                             
     }
-
-
 }
