@@ -8,6 +8,10 @@ namespace OOP
 {
      internal abstract class Animal
     {
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public int Weight { get; set; }
+
         //Add constructor to class with required fields
         public Animal(string name, int age, int weight)
         {
@@ -15,9 +19,6 @@ namespace OOP
             Age = age;
             Weight = weight;
         }
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public int Weight { get; set; }
 
         //Add method 
         public abstract void DoSound();                                                                             

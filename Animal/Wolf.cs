@@ -8,9 +8,10 @@ namespace OOP
 {
     internal class Wolf : Animal
     {
-        public Wolf(string Name, int Age, int Weight, int Height) : base(Name, Age, Weight)
+        public string Color { get; set; }
+        public Wolf(string Name, int Age, int Weight, string Color) : base(Name, Age, Weight)
         {
-
+            this.Color = Color;
         }
         public override void DoSound()
         {

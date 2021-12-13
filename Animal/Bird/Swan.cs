@@ -8,9 +8,10 @@ namespace OOP
 {
     internal class Swan : Bird
     {
-        public Swan(string Name, int Age, int Weight, int Height, int NumberOfLegs) : base(Name, Age, Weight, Weight)
+        public bool OnLand { get; set; }
+        public Swan(string Name, int Age, int Weight, int Height, bool OnLand) : base(Name, Age, Weight, Weight)
         {
-
+            this.OnLand = OnLand;
         }
         public override void DoSound()
         {

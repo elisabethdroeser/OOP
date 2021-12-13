@@ -8,9 +8,10 @@ namespace OOP
 {
     internal class Bird : Animal
     {
-        public Bird(string Name, int Age, int Weight, int Height) : base(Name, Age, Weight)
+        public int NumberOfLegs { get; set; }
+        public Bird(string Name, int Age, int Weight, int NumberOfLegs) : base(Name, Age, Weight)
         {
-
+            this.NumberOfLegs = NumberOfLegs;
         }
         public override void DoSound()
         {

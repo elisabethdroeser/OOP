@@ -8,9 +8,10 @@ namespace OOP
 {
     internal class Flamingo : Bird
     {
-        public Flamingo(string Name, int Age, int Weight, int Height, int NumberOfLegs) : base(Name, Age, Weight, Weight)
+        public string Feather { get; set; }
+        public Flamingo(string Name, int Age, int Weight, int Height, int NumberOfLegs, string Feather) : base(Name, Age, Weight, Weight)
         {
-
+            this.Feather = Feather;
         }
         public override void DoSound()
         {

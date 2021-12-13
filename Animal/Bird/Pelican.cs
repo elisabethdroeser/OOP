@@ -4,9 +4,10 @@ namespace OOP
 {
     internal class Pelican : Bird
     {
-        public Pelican(string Name, int Age, int Weight, int Height, int NumberOfLegs) : base(Name, Age, Weight, Weight)
+        public string Mouth { get; set; }
+        public Pelican(string Name, int Age, int Weight, int Height, string Mouth) : base(Name, Age, Weight, Weight)
         {
-
+            this.Mouth = Mouth;
         }
         public override void DoSound()
         {
