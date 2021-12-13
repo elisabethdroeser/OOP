@@ -2,12 +2,10 @@
 {
     public class Person
     {
-        //Add constructor to class with required fields
-        public Person(string fName, string lName)
-        {
-            FirstName = fName;
-            LastName = lName;
-        }
+        private double heigth { get; set; } 
+        private double weight { get; set; }
+
+        private int age;
         public int Age
         {
             get
@@ -19,7 +17,7 @@
                 Age = ValidateAge(value);
             }
         }
-        //public string FirstName { get; set; }
+
         private string firstName;
         public string FirstName
         {
@@ -33,31 +31,25 @@
             }
         }
 
-        //propfull
-        //private int age;
-
-        //public int Age
-        //{
-        //    get { return age; }
-        //    set { age = value; }
-        //}
-
-
         private string lastName;
-        public string LastName //Public 
+        public string LastName 
         {
             get
             {
                 return lastName;
             }
-            set 
+            set
             {
                 lastName = ValidateString(value);
             }
         }
 
-        private double heigth { get; set; } //private height
-        private double weight { get; set; }
+        //Add constructor to class with required fields
+        public Person(string fName, string lName)
+        {
+            FirstName = fName;
+            LastName = lName;
+        }
 
         public int ValidateAge(int Age)
         {
@@ -79,32 +71,11 @@
                     "letters) in your name");
 
             }
-            //else if (FirstName.Length >= 10)
-            //{
-            //    throw new System.ArgumentException("You have entered to many (maximum 10) letters in your name");
-            //}
             else
             {
                 return input;
             }
         }
-
-        //public string ValidateLastName(string value)
-        //{
-        //    if (LastName.Length < 2)
-        //    {
-        //        throw new System.ArgumentException("You have entered to few (minimum 2) letters in your name");
-
-        //    }
-        //    else if (LastName.Length >= 10)
-        //    {
-        //        throw new System.ArgumentException("You have entered to many (maximum 10) letters in your name");
-        //    }
-        //    else
-        //    {
-        //        return LastName;
-        //    }
-        //}
     }
 }
 
