@@ -10,7 +10,7 @@ namespace OOP
     {
         public Horse(string Name, int Age, int Weight, int Height) : base(Name, Age, Weight)
         {
-
+            //Set height
         }
         public override void DoSound()
         {

@@ -8,10 +8,13 @@ namespace OOP
 {
     internal class Dog : Animal
     {
+        public int Height { get; set; }
+
         public Dog(string Name, int Age, int Weight, int Height) : base(Name, Age, Weight)
         {
-
+            this.Height = Height;
         }
+
         public override void DoSound()
         {
             Console.WriteLine("Voff");

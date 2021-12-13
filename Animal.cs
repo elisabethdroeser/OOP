@@ -15,15 +15,13 @@ namespace OOP
             Age = age;
             Weight = weight;
         }
-        private string Name { get; set; }
-        private int Age { get; set; }
-        private int Weight { get; set; }
-        
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public int Weight { get; set; }
+
         //Add method 
-        public virtual void DoSound()
-        {
-            Console.WriteLine("Animalsound!");
-        }                                                                                   
+        public abstract void DoSound();
+                                                                                  
     }
 
 
