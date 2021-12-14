@@ -21,6 +21,10 @@ namespace OOP
         }
 
         //Add method 
-        public abstract void DoSound();                                                                             
+        public abstract void DoSound();     
+        public virtual string Stats()
+        {
+            return $"Name: {Name}, Age: {Age}, Weight: {Weight}, ";
+        }
     }
 }

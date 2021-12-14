@@ -25,6 +25,28 @@ namespace OOP
             }
 
             Console.ReadLine();
+
+
+            // Skapa ett gäng djur
+            // lägg in dem i en List<Animal>()
+            var animals = new List<Animal>();
+            foreach (var animal in animals)
+            {
+
+
+                if (animal is Dog)
+                {
+                    var dog = (Dog)animal;
+                    dog.DoTrick();
+                }
+
+                if (animal is IPerson)
+                {
+                    var animalManHybrid = (IPerson)animal;
+                    animalManHybrid.Talk();
+                }
+
+            }
         }
     }
 }

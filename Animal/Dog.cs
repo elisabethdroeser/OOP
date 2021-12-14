@@ -19,5 +19,15 @@ namespace OOP
         {
             Console.WriteLine("Voff");
         }
+
+        public override string Stats()
+        {
+            return base.Stats() + $"Height: {Height}.";
+        }
+
+        public void DoTrick()
+        {
+            Console.WriteLine("Dog Rolls Over");
+        }
     }
 }

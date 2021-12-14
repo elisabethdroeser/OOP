@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    internal class Horse : Animal
+    internal class Horse : Animal, IPerson
     {
         public string Mane { get; set; }
         public Horse(string Name, int Age, int Weight, string Mane) : base(Name, Age, Weight)
@@ -17,6 +17,11 @@ namespace OOP
         {
             Console.WriteLine("Gnääägg");
         }
-       // public int Height { get; set; }
+
+        public void Talk()
+        {
+            Console.WriteLine("Jag är en kentaur!");
+        }
+        // public int Height { get; set; }
     }
 }
