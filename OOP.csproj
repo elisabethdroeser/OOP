@@ -9,4 +9,8 @@
     <Compile Remove="Animal\Bird\Swan.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Include="bin\TextInputError.cs" />
+  </ItemGroup>
+
 </Project>

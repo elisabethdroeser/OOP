@@ -29,6 +29,7 @@ namespace OOP
                 owl,
                 smilla
             };
+
             List<Dog> dog = new List<Dog>()
             {
                 lily,
@@ -37,13 +38,13 @@ namespace OOP
 
     
             // lägg in dem i en List<Animal>()
-            var animals = new List<Animal>();
-            foreach (var animal in animals)
+            var a = new List<Animal>();
+            foreach (var anim in a)
             {
 
-                if (animal is Dog)
+                if (anim is Dog)
                 {
-                    var dog = (Dog)animal;
+                    var dog = (Dog)anim;
                     dog.DoTrick();
                 }
 
