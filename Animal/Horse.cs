@@ -18,10 +18,14 @@ namespace OOP
             Console.WriteLine("Gnääägg");
         }
 
+        public override string Stats()
+        {
+            return base.Stats() + $"Mane: {Mane}.";
+        }
+
         public void Talk()
         {
             Console.WriteLine("Jag är en kentaur!");
         }
-        // public int Height { get; set; }
     }
 }

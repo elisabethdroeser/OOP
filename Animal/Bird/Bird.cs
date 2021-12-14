@@ -17,5 +17,9 @@ namespace OOP
         {
             Console.WriteLine("Piiiip");
         }
+        public override string Stats()
+        {
+            return base.Stats() + $"Number of legs: {NumberOfLegs}.";
+        }
     }
 }
