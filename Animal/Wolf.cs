@@ -17,5 +17,9 @@ namespace OOP
         {
             Console.WriteLine("Ouiiiiii");
         }
+        public override string Stats()
+        {
+            return base.Stats() + $"Color: {Color}.";
+        }
     }
 }
