@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="bin\TextInputError.cs" />
+    <Folder Include="bin\" />
   </ItemGroup>
 
 </Project>

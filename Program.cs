@@ -7,6 +7,23 @@ namespace OOP
     {
         static void Main(string[] args)
         {
+            //Testing the error functionality
+            NumbericInputError numerror = new NumbericInputError();
+            TextInputError texterror = new TextInputError();
+
+            //Get list of errors
+            List<UserError> errors = new List<UserError>()
+            {
+                numerror, texterror
+            };
+           
+            //Write the list of errors to the console
+            foreach (UserError uer in errors)
+            {
+                Console.WriteLine($"Error: {uer.UEMessage()}");
+            }
+
+            /*
             //Test if the argumentexception works with different names with few/more letters
             //Person person = new Person("Lisa", "Droeser");
 
@@ -65,7 +82,7 @@ namespace OOP
             {
                 Console.WriteLine(e.Message); 
             }
-
+            */
             Console.ReadLine();
         }
     }
